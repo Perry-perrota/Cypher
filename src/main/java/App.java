@@ -20,12 +20,14 @@ public class App {
             if (choiceInput == 1) {
                 Encode newTry = new Encode(word);
                 String encodedWord = newTry.EncodeWord(word);
-                System.out.println(encodedWord);
+                System.out.println("Your Encrypted word is:" +encodedWord);
+                System.out.println("Your word was:" +word);
 
             } else if (choiceInput == 2) {
                 Decode newTry = new Decode(word);
                 String decodedWord = newTry.DecodeWord(word);
-                System.out.println(decodedWord);
+                System.out.println("Your Decrypted word is:" +decodedWord);
+                System.out.println("Your word was:" +word);
 
             } else {
                 running = false;
